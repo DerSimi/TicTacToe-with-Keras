@@ -17,10 +17,10 @@ if __name__ == "__main__":
     train_x, test_x, train_y, test_y = train_test_split(x, y, test_size=0.20)
     print("y:", y)
 
-    print(len(train_x), 'Trainingsdatensätze und ', len(test_x), 'Testdatensätze')
+    print(len(train_x), 'train sets und ', len(test_x), 'test sets')
 
     model = createModel(0.001)
 
     model.fit(x, y, verbose=2, batch_size=10, epochs=200)
 
-    print("Model wurde evaluiert, Trefferquote von:", model.evaluate(test_x, test_y)[1])
+    print("Model was evaluated: Accuracy  on the test set: ", model.evaluate(test_x, test_y)[1])
