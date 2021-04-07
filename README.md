@@ -14,4 +14,4 @@ train_data_generator.py could be useful. You see how the generator works when yo
 
 Also is a dataset included, so you can test it on our own machine and perhaps, you can improve it :D
 
-Simplifying the data could make it more "understandable" for the network.
+Simplifying the data could make it more "understandable" to the network.
